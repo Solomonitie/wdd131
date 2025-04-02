@@ -51,7 +51,15 @@ h1 {
     margin: 2rem 0;
 }
 
-/* Footer adjustments */
-footer {
+/* Temple card adjustments */
+.temple-info {
     padding: 1.5rem;
+}
+
+.temple-name {
+    font-size: 1.4rem;
+}
+
+.temple-location, .temple-dedicated, .temple-area {
+    font-size: 1rem;
 }
