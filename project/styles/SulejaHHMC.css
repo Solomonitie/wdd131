@@ -1,0 +1,20 @@
+:root{
+
+    --back_color1: #0D1B2A;
+    --background_color: #1D5599;
+    --accent_color2: #DFDFDF;
+
+    
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #DFDFDF;
+    background-color: #1D5599;
+    
+}
+
+h2 {
+    color: #0D1B2A;
+    background-color: #1D5599;
+}
