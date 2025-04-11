@@ -1,0 +1,28 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on smaller screens */
+    }
+    
+    .navigation {
+        display: none; /* Hide navigation by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f8f9fa;
+        width: 100%;
+    }
+
+    .navigation.active {
+        display: flex; /* Show navigation when active */
+    }
+
+    .navigation li {
+        margin: 0.5rem 0; /* Adjust margin for vertical list */
+    }
+ 
+    .SulejaHHMC-logo .action {
+        font-size: 1.2em; /* Smaller font size on smaller screens */
+    }
+}

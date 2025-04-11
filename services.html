@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - project page for Okoye Emmanuel">
+    <meta name="author" content="Okoye Emmanuel">
+    <meta name="keywords" content="SulejaHHMC, HTML Java Scripts, CSS, Customer training, loan Application, Agricultural Projects, Account Registration,Account Opening, Payment Request,Credit Card App, Mobile Application, ">
+    <link rel="stylesheet" href="styles/Sulejahm.css">
+    <link rel="stylesheet" href="styles/sulejahm-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <script src="scripts/SulejaHm.js" defer></script>
+    <script src="scripts/getdate.js" defer></script>
+    <title>SulejaHHMC Services</title>
+</head>
+<body>
+    <header>
+        <div class="SulejaHHMC-logo">
+            <a href="./index.html"><img class="logo" src="images/savings.jpg"  width="200" height="120" alt="SulejaHHMC design logo of hand holding up a coin">
+            </a>
+            <h1 class="action">Suleja HHMC LTD</h1>
+        </div>
+        <div class="navpan">
+            <div class="hamburger" id="hamburger">&#9776;</div>
+                
+            <nav class="navigation" id="nav-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main><h2>Loan Request Form</h2>
+        <form action="thank-you.html" method="get">
+            <label for="username">1. Enter your Username:<span style="color: red;">*</span></label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            
+            <label for="email">2. Enter your Email Address:<span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+        
+            <label for="fullname">3. Full Name:<span style="color: red;">*</span></label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br>
+        
+            <label for="dob">4. Date of Birth:<span style="color: red;">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+        
+            <label for="address">5. Address:<span style="color: red;">*</span></label>
+            <input type="text" id="address" name="address" required>
+            <br>
+        
+            <label for="phone">6. Phone Number:<span style="color: red;">*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+        
+            <label for="employer">7. Employer Name:<span style="color: red;">*</span></label>
+            <input type="text" id="employer" name="employer" required>
+            <br>
+        
+            <label for="income">8. Monthly Income:<span style="color: red;">*</span></label>
+            <input type="number" id="income" name="income" required>
+            <br>
+        
+            <label for="loanAmount">9. Loan Amount Requested:<span style="color: red;">*</span></label>
+            <input type="number" id="loanAmount" name="loanAmount" required>
+            <br>
+        
+            <label for="loanPurpose">10. Purpose of the Loan:<span style="color: red;">*</span></label>
+            <select id="loanPurpose" name="loanPurpose" required>
+                <option value="">Select...</option>
+                <option value="home">Home Purchase</option>
+                <option value="car">Car Purchase</option>
+                <option value="debt">Debt Consolidation</option>
+                <option value="business">Business Investment</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+        
+            <label for="comments">11. Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            <br><br>
+        
+            <button type="submit">Send Request</button>
+        </form>
+        <div class="media-logo">
+            <p> <a href="https://www.iconfinder.com/search?q=facebook&price=free&license=gte"> 
+                <img src="images/facebook.webp" alt="facebook"></a>
+            </p>
+            <p>
+                <a href="https://www.iconfinder.com/icons/3225179/app_logo_media_popular_social_whatsapp_icon">
+                <img src="images/watsapp.webp" alt="watsapp"></a>
+            </p>
+            <p>
+                <a href="https://www.iconfinder.com/icons/3225191/app_instagram_logo_media_popular_social_icon">
+                    <img src="images/twitter.webp" alt="twitter"> 
+                </a>
+            </p>
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> SulejaHHMC, Abuja, Nigeria
+          </p>
+          <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
