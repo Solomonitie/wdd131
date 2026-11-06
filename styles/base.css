@@ -39,7 +39,13 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-header,
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
 main,
 footer {
     max-width: 1000px;
