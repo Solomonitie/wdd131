@@ -1,31 +1,32 @@
-header {
-    flex-wrap: nowrap;
-}
+@media screen and (min-width: 37.5em) {
+    header {
+        flex-wrap: nowrap;
+    }
 
-#menu-button {
-    display: none;
-    /* Hide hamburger icon on larger screens */
-}
+    #menu-button {
+        display: none;
+    }
 
-nav {
-    width: auto;
-}
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
 
-.navigation {
-    display: flex;
-    /* Always visible in horizontal flex row */
-    flex-direction: row;
-    margin-top: 0;
-    gap: 0.5rem;
-}
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
 
-.navigation a {
-    border-top: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
+    .navigation a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
 
-/* Multi-column responsive grid for tablet and desktop */
-.gallery {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 }

@@ -1,13 +1,11 @@
-/* Color Palette & Typography Variables */
 :root {
     --primary-color: #1b365d;
-    /* Deep Navy (High contrast with white) */
     --secondary-color: #f4f6f9;
-    /* Soft Off-White background */
     --accent-color: #d4af37;
-    /* Warm Gold for hover states */
+    --surface-color: #ffffff;
     --text-dark: #1a1a1a;
     --text-light: #ffffff;
+    --border-subtle: #3a547a;
     --heading-font: 'Playfair Display', Georgia, serif;
     --body-font: 'Roboto', Arial, sans-serif;
 }
@@ -25,7 +23,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header & Mobile Navigation */
 header {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -42,7 +39,6 @@ header {
     font-weight: 700;
 }
 
-/* Hamburger Button (Visible in Mobile) */
 #menu-button {
     font-size: 1.8rem;
     background: none;
@@ -61,20 +57,20 @@ header {
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
 .navigation {
     list-style: none;
     display: none;
-    /* Hidden by default on mobile */
     flex-direction: column;
     margin-top: 1rem;
 }
 
 .navigation.open {
     display: flex;
-    /* Shown when toggled via JS */
 }
 
 .navigation a {
@@ -84,7 +80,7 @@ nav {
     padding: 0.75rem;
     text-align: center;
     font-weight: 500;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid var(--border-subtle);
     transition: background-color 0.25s ease, color 0.25s ease;
 }
 
@@ -94,7 +90,6 @@ nav {
     color: var(--text-dark);
 }
 
-/* Main Content & 1-Column Mobile Grid */
 main {
     max-width: 960px;
     margin: 1.5rem auto;
@@ -116,10 +111,9 @@ h1 {
 }
 
 figure {
-    background-color: #ffffff;
+    background-color: var(--surface-color);
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -135,7 +129,6 @@ figcaption {
     color: var(--primary-color);
 }
 
-/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
